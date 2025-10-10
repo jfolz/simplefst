@@ -205,7 +205,7 @@ class Map:
     Use Map.union, Map.intersection, Map.difference, and Map.symmetric_difference instead.
     """
 
-    def __init__(self, data: SupportsBytes):
+    def __new__(cls, data: SupportsBytes):
         """
         Create a Set from the given data.
         data can be any object that supports the buffer protocol,
@@ -438,7 +438,7 @@ class Set:
     Use Set.union, Set.intersection, Set.difference, and Set.symmetric_difference instead.
     """
 
-    def __init__(self, data: SupportsBytes):
+    def __new__(cls, data: SupportsBytes):
         """
         Create a Set from the given data.
         data can be any object that supports the buffer protocol,
