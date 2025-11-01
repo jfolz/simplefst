@@ -58,7 +58,7 @@ jobs:
         with:
           profile: minimal
       - name: Build wheels
-        uses: pypa/cibuildwheel@v3.2.0
+        uses: pypa/cibuildwheel@v3.2.1
         env:
           CIBW_ARCHS: ${{ matrix.arch }}
       - uses: actions/upload-artifact@v4
